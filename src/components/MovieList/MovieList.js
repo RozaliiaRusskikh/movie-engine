@@ -14,7 +14,7 @@ function MovieList() {
         <p className="movie-list__description">
           Let's build a shared movie list together. <br/> Just add your favourite
           movie or film that you want to watch and everyone can see your
-          suggestion and take your advice
+          recommendation
         </p>
       </div>
       <h3 className="movie-list__subheader">Users' Recommendations:</h3>
