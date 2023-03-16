@@ -15,7 +15,9 @@ function Header() {
             <option value="horror">Horror</option>
             <option value="thriller">Thriller</option>
           </select>
+          <Link to='/user-recommendations'>
           <button className="header__button">User Recommendations</button>
+          </Link>
         </div>      
       </header>
   );
