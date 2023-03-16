@@ -19,9 +19,13 @@ function MovieList({ usersMovies }) {
       </div>
       <h3 className="movie-list__subheader">Users' Recommendations:</h3>
       <ul className="movie-list__list-container">
-        {usersMovies.map((movie) => {
-          return <li key={movie.id}>{movie.title}</li>;
-        })}
+        {usersMovies.length > 0 ? (
+          usersMovies.map((movie) => {
+            return <li key={movie.id}>{movie.title}</li>;
+          })
+        ) : (
+          <h3>Loading...</h3>
+        )}
       </ul>
     </section>
   );

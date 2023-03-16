@@ -14,10 +14,6 @@ function UserRecommendation() {
     });
   }, []);
 
-  if (!usersMovies) {
-    return <h2>Loading</h2>;
-  }
-
   function updateUsersMovieState(movies) {
     setUsersMovies(movies);
   }
