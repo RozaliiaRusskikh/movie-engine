@@ -1,20 +1,63 @@
 @use "../../styles/global.scss" as *;
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
 
 
 .header{
     width: 100%;
-    padding: 0 1rem;
+    padding:0 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: $Primaryblue;
 
-    &__container{
-        display: flex;
-        align-items: center;
+
+    &__dropdown{
+        margin: auto 0;
+        font-size: 3vw;
+        height: 10vw;
+        width: 35vw;
+        max-height: 3rem;
+        background-color: $ButtonColor;
+        border-radius: 0.25rem;
+        font-weight: 600;
+
+        @include tablet{
+            width: 13rem;
+            font-size: 1rem;
+        }
     }
+
+    &__button{
+        height: 10vw;
+        max-height: 3rem;
+        width: 35vw;
+        font-size: 3vw;
+        margin: auto 0;
+        border-radius: 0.25rem;
+        border: none;
+        background-color: $ButtonColor;
+        font-weight: 600;
+
+        @include tablet{
+            width: 13rem;
+            font-size: 1rem;
+        }
+
+    }
+
 
     &__logo{
-        width: 150px;
-    }
+        width: 18vw;
+        border-radius: 0.25rem;
+        margin-top: .25rem;
 
+        @include tablet{
+            width: 7rem;
+        }
+
+        @include desktop{
+            width: 8rem;
+        }
+    }
 }

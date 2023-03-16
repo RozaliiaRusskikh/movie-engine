@@ -6,7 +6,6 @@ function Header() {
   return (
       <header className="header">
         <Link to='/'><img className="header__logo" src={Logo} alt="movie engine logo" /></Link>
-        <div className="header__container">        
           <select className="header__dropdown" name="movies" id="movies">
             <option value="popular">Popular movies</option>
             <option value="action">Action</option>
@@ -16,7 +15,6 @@ function Header() {
             <option value="thriller">Thriller</option>
           </select>
           <button className="header__button">User Recommendations</button>
-        </div>      
       </header>
   );
 }

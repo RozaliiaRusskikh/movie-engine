@@ -1,10 +1,12 @@
 import Card from "../Card/Card";
+import './CardList.scss'
 
 function CardList() {
   return (
-    <section>
-      <h2>Comedy Movies</h2>
-      <ul>
+    <section className="movie">
+      <h2 className="movie__genre">Comedy Movies</h2>
+      <ul className="movie__list">
+        <Card />
         <Card />
       </ul>
     </section>
