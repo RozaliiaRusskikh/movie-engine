@@ -1,0 +1,36 @@
+@use "../../styles/global.scss" as *;
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.movie{
+    &__genre{
+        font-size: 1rem;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 6vw;
+
+        @include tablet{
+            font-size: 3rem;
+        }
+
+        @include desktop{
+            padding: 1rem 0;
+        }
+    }
+
+    &__list{
+        padding: 0;
+        width: 50%;
+
+        @include tablet{
+            width: 40%;
+            display: flex;
+        }
+
+        @include desktop{
+            height: 18rem;
+            margin: 1rem;
+        }
+    }
+}
