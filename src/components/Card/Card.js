@@ -1,10 +1,12 @@
 import Logo from "../../assets/movie-engine-logo.jpeg";
+import "./Card.scss"
+
 
 function Card() {
   return (
-    <article>
-      <img src={Logo} alt="card"/> 
-      <p>Title</p>
+    <article className="card">
+      <img className="card__img" src={Logo} alt="card"/> 
+      <p className="card__title">Title</p>
     </article>
   );
 }

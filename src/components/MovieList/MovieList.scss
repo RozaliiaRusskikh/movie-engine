@@ -6,10 +6,9 @@
     text-align: center;
     font-size: 2.5rem;
     padding: 1rem 0;
-    color: $Primaryblue;
 
     @include desktop {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
   }
 

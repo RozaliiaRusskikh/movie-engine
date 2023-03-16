@@ -1,13 +1,13 @@
-@use "./variables" as *;
+@use "../styles/variables" as *;
 
 @mixin tablet {
-    @media (min-width: $breakpoint-tablet) {
+    @media screen and (min-width: $tablet-breakpoint) {
       @content;
     }
   }
   
   @mixin desktop {
-    @media (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: $desktop-breakpoint) {
       @content;
     }
   }

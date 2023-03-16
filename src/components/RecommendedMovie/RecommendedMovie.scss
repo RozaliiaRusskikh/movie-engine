@@ -1,0 +1,37 @@
+@use "../../styles/global.scss" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.recommend {
+  color: white;
+  position: relative;
+  top: 2rem;
+  padding: 0.5rem;
+
+  @include tablet {
+    position: relative;
+    top: 11rem;
+    left: 1rem;
+  }
+
+  @include desktop {
+    left: 6rem;
+    top: 9rem;
+  }
+
+  &__text {
+    font-size: 4vw;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  &__title {
+    font-size: 4vw;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+}
