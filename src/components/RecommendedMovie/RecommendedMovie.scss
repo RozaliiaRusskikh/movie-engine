@@ -29,6 +29,7 @@
 
   &__title {
     font-size: 4vw;
+    color: $ButtonColor;
 
     @include tablet {
       font-size: 2rem;
