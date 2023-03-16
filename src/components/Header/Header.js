@@ -8,6 +8,7 @@ function Header() {
       <Link to="/">
         <img className="header__logo" src={Logo} alt="movie engine logo" />
       </Link>
+      <h2 className="header__title">Smart Movie Engine</h2>
       <Link to="/user-recommendations">
         <button className="header__button">User Recommendations</button>
       </Link>
