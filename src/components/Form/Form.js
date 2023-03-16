@@ -1,8 +1,9 @@
 import "./Form.scss";
 import { useState } from "react";
 import Message from "../Message/Message";
+import axios from "axios";
 
-function Form() {
+function Form({ updateUsersMovieState }) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [message, setMessage] = useState(null);
@@ -41,10 +42,15 @@ function Form() {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     if (isFormValid()) {
-      //make an axios request to backend to add the comment
-      setFlashMessage("submitted");
-      setTitle("");
-      setDescription("");
+      //make an axios request to backend to add the movie
+      axios
+        .post("http://localhost:8080/movies", { title, description })
+        .then((response) => {
+          updateUsersMovieState(response.data);
+          setFlashMessage("submitted");
+          setTitle("");
+          setDescription("");
+        });
     } else {
       setFlashMessage("error");
     }
