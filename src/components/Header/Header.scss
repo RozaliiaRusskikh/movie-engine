@@ -1,0 +1,20 @@
+@use "../../styles/global.scss" as *;
+
+
+.header{
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo{
+        width: 150px;
+    }
+
+}
