@@ -1,8 +1,8 @@
-const API_URL = "https://api.themoviedb.org/3";
+export const API_URL = "https://api.themoviedb.org/3";
 
 const endpoint = "/discover/movie";
 
-const API_KEY = "?api_key=0d6fea5579aa71ef103b1cbf982f0a98";
+export const API_KEY = "?api_key=0d6fea5579aa71ef103b1cbf982f0a98";
 
 export const getMoviesEndpointPopular =
   API_URL +
@@ -24,10 +24,3 @@ export const getMoviesEndpointHorror =
 
 export const getMoviesEndpointThriller =
   API_URL + endpoint + API_KEY + "&with_genres=53";
-
-export const getRandomMovieEndpoint =
-  API_URL + "/movie/" + getRandomNumber() + API_KEY;
-
-function getRandomNumber() {
-  return Math.floor(Math.random() * (1000 - 100 + 1) + 100);
-}

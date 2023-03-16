@@ -2,21 +2,25 @@ import RecommendedMovie from "../RecommendedMovie/RecommendedMovie";
 import { useState } from "react";
 import axios from "axios";
 import "./Hero.scss";
-import { getRandomMovieEndpoint } from "../../api-utils";
+import { API_URL, API_KEY } from "../../api-utils";
 
 function Hero() {
   const [findMovie, setFindMovie] = useState(false);
   const [filmOfTheDay, setFilmOfTheDay] = useState(null);
-  const getFilmOfTheDay = () => {
-    axios.get(getRandomMovieEndpoint).then((response) => {
-      if (response.status === 200) {
+  function getFilmOfTheDay() {
+    function getRandomNumber() {
+      return Math.floor(Math.random() * (1000 - 100 + 1) + 100);
+    }
+    axios
+      .get(API_URL + "/movie/" + getRandomNumber() + API_KEY)
+      .then((response) => {
         setFilmOfTheDay(response.data);
         setFindMovie(true);
-      } else {
-        setFilmOfTheDay("Hello World");
-      }
-    });
-  };
+      })
+      .catch((error) => {
+        console.log("Issue with API:", error.message);
+      });
+  }
 
   return (
     <section className="hero">
