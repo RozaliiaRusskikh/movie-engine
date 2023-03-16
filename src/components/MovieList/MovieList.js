@@ -4,7 +4,7 @@ import movieListImage from "../../assets/movie-list.jpeg";
 function MovieList() {
   return (
     <section className="movie-list">
-      <h2 className="movie-list__header">Movie watchlist</h2>
+      <h2 className="movie-list__header">Movie Watchlist</h2>
       <div className="movie-list__description-image-container">
         <img
           className="movie-list__image"
@@ -17,7 +17,7 @@ function MovieList() {
           suggestion and take your advice
         </p>
       </div>
-      <h3 className="movie-list__subheader">Users's Recommendations:</h3>
+      <h3 className="movie-list__subheader">Users' Recommendations:</h3>
       <ul className="movie-list__list-container">
         <li>Movie1 Name</li>
         <li>Movie2 Name</li>
