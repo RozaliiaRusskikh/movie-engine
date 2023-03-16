@@ -10,23 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: $Primaryblue;
-
-
-    &__dropdown{
-        margin: auto 0;
-        font-size: 3vw;
-        height: 10vw;
-        width: 35vw;
-        max-height: 3rem;
-        background-color: $ButtonColor;
-        border-radius: 0.25rem;
-        font-weight: 600;
-
-        @include tablet{
-            width: 13rem;
-            font-size: 1rem;
-        }
-    }
+    align-items: center;
 
     &__button{
         height: 10vw;

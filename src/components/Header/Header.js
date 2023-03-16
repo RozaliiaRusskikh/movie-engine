@@ -8,14 +8,6 @@ function Header() {
       <Link to="/">
         <img className="header__logo" src={Logo} alt="movie engine logo" />
       </Link>
-      <select className="header__dropdown" name="movies" id="movies">
-        <option value="popular">Popular movies</option>
-        <option value="action">Action</option>
-        <option value="comedy">Comedy</option>
-        <option value="family">Family</option>
-        <option value="horror">Horror</option>
-        <option value="thriller">Thriller</option>
-      </select>
       <Link to="/user-recommendations">
         <button className="header__button">User Recommendations</button>
       </Link>
