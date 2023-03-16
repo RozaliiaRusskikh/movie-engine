@@ -12,8 +12,15 @@
     left: 50%;
 
     @include tablet{
-        left: 0;
-        margin: 1rem;
+        left: 10%;
+        margin: 0rem;
+        width: 80%;
+        align-items: center;
+        height: 30vw;
+    }
+
+    @include desktop{
+        height: 35vw;
     }
 
     &__img{
@@ -21,12 +28,12 @@
         border-radius: 0.25rem;
 
         @include tablet{
-            height: 8rem;
+            height: 100%;
             object-fit: cover;
         }
 
         @include desktop{
-            height: 15rem;
+            height: 30vw;
         }
     }
 
@@ -34,10 +41,15 @@
         display: flex;
         justify-content: center;
         font-size: 5vw;
+        text-align: center;
 
         @include tablet{
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 
+}
+
+.card__img:hover{
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
 }
