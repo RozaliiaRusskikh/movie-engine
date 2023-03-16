@@ -44,7 +44,7 @@ function CardList() {
         });
         break;
       case "Horror":
-        axios.get(getMoviesEndpointPopular).then((response) => {
+        axios.get(getMoviesEndpointHorror).then((response) => {
           setMovies(response.data.results);
           setIsLoading(false);
         });
@@ -61,7 +61,7 @@ function CardList() {
           setIsLoading(false);
         });
     }
-  }, [movies]);
+  }, [movies, option]);
 
   if (isLoading) {
     return <h1>Loading...</h1>;
@@ -74,7 +74,7 @@ function CardList() {
   return (
     <section className="movie">
       <div className="movie__filter">
-        <h2 className="movie__genre">{`${option} Movies`}</h2>
+        <h2 className="movie__genre">{`Our ${option} Movie List`}</h2>
         <select
           className="movie__dropdown"
           name="movies"
