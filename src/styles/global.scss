@@ -1,0 +1,9 @@
+@import "../styles/typography";
+
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald'
+}

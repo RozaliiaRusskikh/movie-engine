@@ -1,7 +1,9 @@
+import Form from "../../components/Form/Form";
+
 function UserRecommendation() {
   return (
     <div>
-      <h1>dfgdg</h1>
+      <Form />
     </div>
   );
 }
