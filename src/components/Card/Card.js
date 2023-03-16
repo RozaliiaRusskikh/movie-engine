@@ -1,10 +1,14 @@
-import Logo from "../../assets/movie-engine-logo.jpeg";
+import "./Card.scss";
 
-function Card() {
+function Card({ movie }) {
   return (
-    <article>
-      <img src={Logo} alt="card"/> 
-      <p>Title</p>
+    <article className="card">
+      <img
+        className="card__img"
+        src={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+        alt="card"
+      />
+      <p className="card__title">{movie.title}</p>
     </article>
   );
 }

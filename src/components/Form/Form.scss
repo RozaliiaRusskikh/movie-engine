@@ -1,0 +1,61 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.add-movie {
+  &__title {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: underline;
+
+    @include desktop {
+      margin-top: 3rem;
+    }
+  }
+  &__label-input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  &__form {
+    padding: 2rem;
+    width: 100%;
+
+    @include desktop {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+  &__button {
+    border-radius: 4px;
+    background-color: $ButtonColor;
+    padding: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+  }
+}
+input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.8rem;
+  background-color: $alabaster;
+  border: 2px solid $Secondaryblue;
+  padding: 0.5rem;
+
+  &::placeholder {
+    color: rgb(120, 118, 118);
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid black;
+  }
+}
+
+label {
+  padding-bottom: 0.3rem;
+}
