@@ -24,3 +24,10 @@ export const getMoviesEndpointHorror =
 
 export const getMoviesEndpointThriller =
   API_URL + endpoint + API_KEY + "&with_genres=53";
+
+export const getRandomMovieEndpoint =
+  API_URL + "/movie/" + getRandomNumber() + API_KEY;
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * (1000 - 100 + 1) + 100);
+}
