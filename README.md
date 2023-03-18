@@ -1,4 +1,5 @@
-# Smart Movie Engine is a SPA for movie geeks with the following key features:
+# Smart Movie Engine 
+This is a SPA for movie geeks with the following key features:
 - Filtering movie by genre
 - Showing movie of the day
 - Ability to see past user recommendations
