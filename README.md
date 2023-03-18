@@ -3,7 +3,7 @@ This is a SPA for movie geeks with the following key features:
 - Filtering movie by genre
 - Showing movie of the day
 - Ability to see past user recommendations
-- Ability save user recommendations
+- Ability to save user recommendations
 ![Screenshot 2023-03-17 at 5 45 35 PM](https://user-images.githubusercontent.com/30150366/226074414-85ef5dc5-1320-45af-bbcf-bed20f3b312a.png)
 
 ## Highlights
@@ -16,3 +16,5 @@ This is a SPA for movie geeks with the following key features:
 - Deployed website using Netlify
 
 ### LINK to the deployed project 🙃 - https://smart-movie-engine.netlify.app/
+
+This project was built by Tomas Bojkovski and Roza Russkikh as a Hackathon project at BrainStation.
